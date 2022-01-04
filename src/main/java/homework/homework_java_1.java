@@ -157,7 +157,6 @@ public class homework_java_1 {
             + "633212.554/1054.8= " + doubleExampleEight/doubleExampleFour + '\n'
             + "89 % 3 = " + exampleModulusFirst + '\n'
             + "8 % 7 = " + exampleModulusSecond);
-
      }
 }
 
