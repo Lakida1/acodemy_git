@@ -10,30 +10,31 @@ public class HomeworkJava2FinalVersion {
         int intTen = 10;
         int intNonTen = 10;
         if (intNonTen == intTen) {
-            System.out.println("Integer value is 10");
+            System.out.println("the integer value is 10");
         } else {
-            System.out.println("Integer value is not 10");
+            System.out.println("the integer value is not 10");
         }
 
         // pracecnaja: in int from 18 until 65, 18-21 10%, 22-65 15%, over 65 15%, change int to define age and to give a discount; status - done;
-        System.out.println("2 exercise: discount depends on customer age. Please put Your age:");
+        System.out.println("2 exercise: the discount depends on the customer age. Please put Your age:");
         int ageOfClient = userTerminal.nextInt();
         if (ageOfClient < 18) {
-            System.out.println("Age group less 18: Please call mom! :)");
+            System.out.println("Your age group is less 18: Please call mom! :)");
         } else if (ageOfClient >= 18 && ageOfClient <= 21) {
-            System.out.println("Age group from 18 till 21: Your discount are: 10 %");
+            System.out.println("Your age group from 18 till 21  so Your discount are: 10 %");
         } else if (ageOfClient > 21 && ageOfClient <= 65) {
-            System.out.println("Age group from 21 till 65: Your discount are: 15 %");
+            System.out.println("Your age group from 21 till 65 so Your discount are: 15 %");
         } else if (ageOfClient > 65) {
-            System.out.println("Age group over 65: Your discount are 20 %");
+            System.out.println("Your age group over 65 so Your discount are 20 %");
         }
 
 // 10 animals, status - partially complete (ne razobralas s else) NE ZNAJU, POCEMU NE OSTANAVLIVAETSJA DLA ZAVEDENIJA NAZAVNIJA ZIVOTNOGO I VIPOLNENIJA (OTDELNO RABOTAET)
 
-        System.out.println("3 exercise: 10 animals, loop FOR");
-        System.out.println("Print any animal name. Please select from: cat, elephant, dog, panda, monkey, mouse, snake, swan, tiger, lion.");
-        String userAnimalName = userTerminal.nextLine();
+        System.out.println("3 exercise: 10 animals (loop FOR)");
+        System.out.println("Print any animal name. Please select from the list: cat, elephant, dog, panda, monkey, mouse, snake, swan, tiger, lion.");
+        // String userAnimalName = userTerminal.nextLine();
         String[] listOfAnimals = {"cat", "elephant", "dog", "panda", "monkey", "mouse", "snake", "swan", "tiger", "lion"};
+        String userAnimalName = "panda";
         for (String item : listOfAnimals) {
             if (userAnimalName.equalsIgnoreCase(item)) {
                 System.out.println(item);
@@ -49,6 +50,25 @@ public class HomeworkJava2FinalVersion {
                 System.out.print(i + " ");
             }
         System.out.println('\n');
+
+        //transport
+
+        System.out.println("5 exercise - transport choice");
+        String transportChoice = "car";
+
+        switch (transportChoice) {
+            case "car":
+                System.out.println("Your choice is a car, a taxi or friend's car. Please check fuel in Your car and/or money in Your wallet. If it is friend's car smile is enough :)");
+                break;
+            case "public transport":
+                System.out.println("Please choose a bus or a tram. Please check before departure accessibility for bus/tram station near home and near the work place, also please check timetable and possibility to bay ticket. ");
+                break;
+            case "bicycle":
+                System.out.println("It is the great choice for Your health, but please check weather.");
+                break;
+            case "holidays":
+                System.out.println("You have the only one choose of transport: a taxi to airport and a airplane to Canary islands (the name of island as Your wish :), but please check money in Your wallet before departure :)");
+        }
 
 //print numbers from 1 till 100; status - done;
         System.out.println("6 exercise - to print numbers from 1 till 100: ");
