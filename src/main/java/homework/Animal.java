@@ -37,7 +37,7 @@ public class Animal {
 
 
     public void walk() {
-        if (isNight == false) {
+        if (!isNight) {
             if (energyLevel >= 1) {
                 energyLevel--;
                 System.out.println(name + ". I am walking. My energy level is " + energyLevel + ". My max level are 4");
@@ -46,7 +46,7 @@ public class Animal {
     }
 
     public void play() {
-        if (isNight == false) {
+        if (!isNight) {
             if (energyLevel >= 1) {
                 energyLevel--;
                 System.out.println(name + ". I am playing. My energy level is " + energyLevel + ". My max level are 4");
@@ -55,7 +55,7 @@ public class Animal {
     }
 
     public void work() {
-        if (isNight == false) {
+        if (!isNight) {
             if (energyLevel >= 1) {
                 energyLevel--;
                 System.out.println(name + ". I am working. My energy level is " + energyLevel + ". My max level are 4");
